@@ -8,7 +8,33 @@
 <body>
 
   <div class="container"></div>
+  <div class="loading ">loading data ...</div>
+  <div class="load-more">
+  
 
+    <button>Load more</button>
+  </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBbuMmfrclvDqoxK6FS3yO22tHVDkrgppw",
+    authDomain: "firestore-pagination-a21e8.firebaseapp.com",
+    databaseURL: "https://firestore-pagination-a21e8.firebaseio.com",
+    projectId: "firestore-pagination-a21e8",
+    storageBucket: "firestore-pagination-a21e8.appspot.com",
+    messagingSenderId: "47650525725",
+    appId: "1:47650525725:web:09f5bc3457a70f93d3ecf4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db=firebase.firestore()
+</script>
   <script src="index.js"></script>
 </body>
 </html>
